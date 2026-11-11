@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #09090f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #101019;
+    border-bottom: 1px solid #252535;
+}
+
+header h1 {
+    color: #a78bfa;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+/* MAIN SECTIONS */
+section {
+    padding: 100px 10%;
+    min-height: 300px;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #a78bfa;
+}
+
+section p {
+    color: #c5c5d2;
+    max-width: 650px;
+    font-size: 17px;
+}
+
+/* HOME SECTION */
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: radial-gradient(
+        circle at top right,
+        #24163f,
+        #09090f 60%
+    );
+}
+
+#home h2 {
+    font-size: 55px;
+    color: #ffffff;
+}
+
+#home p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* DISCOVER BUTTON */
+#discoverBtn {
+    display: inline-block;
+    background: #8b5cf6;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#discoverBtn:hover {
+    background: #a78bfa;
+    transform: translateY(-3px);
+}
+
+/* ABOUT, SKILLS, PROJECTS AND CONTACT */
+#about,
+#projects {
+    background: #101019;
+}
+
+#skills,
+#contact {
+    background: #09090f;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #101019;
+    color: #888899;
+    border-top: 1px solid #252535;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    #home h2 {
+        font-size: 38px;
+    }
+
+    section {
+        padding: 70px 7%;
+    }
+}
