@@ -67,3 +67,8 @@ This portfolio is part of my learning journey as I continue developing my progra
 ---
 
 © 2026 Liss Brine. All Rights Reserved.
+## Future Improvements
+
+- Add more projects to the portfolio.
+- Improve the website's animations.
+- Add a working contact form.
